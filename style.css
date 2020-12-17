@@ -1,8 +1,12 @@
+:root {
+  --button-background: #ccc;
+}
 body {
   display: flex;
   align-items: center;
   background: #F4F4F4;
   min-height: 100vh;
+  font-family: sans-serif;
 }
 
 main {
@@ -11,4 +15,108 @@ main {
   background: #fff;
   width: 90vw;
   max-width: 980px;
+}
+
+
+/**
+ * Icons
+ */
+ @font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?fy0efh');
+  src:  url('fonts/icomoon.eot?fy0efh#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?fy0efh') format('truetype'),
+    url('fonts/icomoon.woff?fy0efh') format('woff'),
+    url('fonts/icomoon.svg?fy0efh#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-android:before {
+  content: "\e900";
+}
+.icon-apple:before {
+  content: "\e901";
+}
+.icon-linux:before {
+  content: "\e902";
+}
+
+/**
+ * Components
+ */
+.button {
+  display: inline-block;
+  margin: .5em;
+  padding: 1em 1.5em;
+  background-color: var(--button-color);
+  color: inherit;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/** Button services */
+.button__patient,
+.button__accompagnateurs,
+.button__professionnels {
+  position: relative;
+  margin-top: 42px;
+  margin-right: 42px;
+}
+
+.button__patient:after,
+.button__accompagnateurs:after,
+.button__professionnels:after {
+  content: "";
+  font-family: 'icomoon';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -21px;
+  right: -21px;
+  height: 42px;
+  width: 42px;
+  border-radius: 50px;
+  border: 2px solid var(--button-color);
+  background: white;
+  font-size: 1.8em;
+  color: var(--button-color);
+}
+
+.button__patient {
+  --button-color: salmon;
+}
+.button__accompagnateurs {
+  --button-color: lightgreen
+}
+.button__professionnels {
+  --button-color: lightblue
+}
+
+.button__patient:after {
+  content:"\e900";
+}
+.button__accompagnateurs:after {
+  content:"\e901";
+}
+.button__professionnels:after {
+  content:"\e902";
 }

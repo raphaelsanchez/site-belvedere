@@ -1,0 +1,14 @@
+body {
+  display: flex;
+  align-items: center;
+  background: #F4F4F4;
+  min-height: 100vh;
+}
+
+main {
+  margin: auto;
+  padding: 4em;
+  background: #fff;
+  width: 90vw;
+  max-width: 980px;
+}

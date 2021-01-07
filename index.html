@@ -9,11 +9,89 @@
 </head>
 <body>
 
+  <header class="header">
+    <a href="">LOGO</a>
+
+    <nav class="header-nav">
+      <button class="menu-toggler">Menu</button>
+      <ul class="menu">
+
+          <li class="menu__item"><a class="menu__link" href="">Patient</a></li>
+          <li class="menu__item"><a class="menu__link" href="">Professionnels</a></li>
+          <li class="menu__item"><a class="menu__link" href="">Actualités</a></li>
+          <li class="menu__item"><a class="menu__link" href="">Contact</a></li>
+
+      </ul>
+    </nav>
+
+  </header>
+
   <main>
-    <a class="button button__patient" href="">Je suis un bouton Patients</a>
-    <a class="button button__accompagnateurs" href="">Je suis un bouton Accompagnateurs</a>
-    <a class="button button__professionnels" href="">Professionnels de santé</a>
+
+    <section class="intro">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa odit a quidem ad quo cum nihil molestiae odio, illum quis accusantium perferendis corrupti quia consequuntur voluptatibus unde iusto aut error.</p>
+    </section>
+
+    <section>
+      <h2>Button with icons</h2>
+      <a class="button button__patient" href="">Je suis un bouton Patients</a>
+      <a class="button button__accompagnateurs" href="">Je suis un bouton Accompagnateurs</a>
+      <a class="button button__professionnels" href="">Professionnels de santé</a>
+    </section>
+
+
+    <section>
+      <h2>Positionnement des boites avec flexbox</h2>
+
+      <div class="box-grid">
+        <article class="box">
+          <h2 class="box__title">Titre</h2>
+          <a href="" class="button">Cliquez moi</a>
+          <img class="box__img" src="https://placehold.it/600x300" alt="">
+        </article>
+        <article class="box">
+          <h2 class="box__title">Titre</h2>
+          <a href="" class="button">Cliquez moi</a>
+          <img class="box__img" src="https://placehold.it/600x300" alt="">
+        </article>
+        <article class="box">
+          <h2 class="box__title">Titre</h2>
+          <a href="" class="button">Cliquez moi</a>
+          <img class="box__img" src="https://placehold.it/600x300" alt="">
+        </article>
+        <article class="box">
+          <h2 class="box__title">Titre</h2>
+          <a href="" class="button">Cliquez moi</a>
+          <img class="box__img" src="https://placehold.it/600x300" alt="">
+        </article>
+        <article class="box">
+          <h2 class="box__title">Titre</h2>
+          <a href="" class="button">Cliquez moi</a>
+          <img class="box__img" src="https://placehold.it/600x300" alt="">
+        </article>
+        <article class="box">
+          <h2 class="box__title">Titre</h2>
+          <a href="" class="button">Cliquez moi</a>
+          <img class="box__img" src="https://placehold.it/600x300" alt="">
+        </article>
+      </div>
+
+    </section>
+
+
+    <section>
+      <h2>Responsibe fixed element</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, at perspiciatis quae placeat ipsum quia, eos aliquam blanditiis sit quibusdam consequatur dignissimos numquam omnis officiis, sunt sint dolores illum. Reprehenderit.</p>
+
+      <nav class="quick-links">
+        <a href=""><i class="icon icon-apple"></i> Téléphone</a>
+        <a href=""><i class="icon icon-apple"></i> Email</a>
+        <a href=""><i class="icon icon-apple"></i> Localisation</a>
+      </nav>
+    </section>
   </main>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
